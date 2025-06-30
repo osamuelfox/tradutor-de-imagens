@@ -58,7 +58,7 @@ export default function App() {
   // Função para chamar a API Gemini
   const callGeminiAPI = useCallback(async (prompt, imageData = null) => {
     const apiKey = process.env.REACT_APP_GEMINI_API_KEY; // A chave da API será injetada pelo ambiente
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${}`;
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=`;
 
     let parts = [{ text: prompt }];
     if (imageData) {
